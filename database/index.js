@@ -1,10 +1,10 @@
 const { Sequelize } = require('sequelize')
 const connection = new Sequelize(
-  "if0_34686097_prueba",
-  "if0_34686097",
-  "BRCJheeiRFr ",
+  "nakama",
+  "reboot",
+  "reboot",
   {
-    host: "mysql://sql211.infinityfree.com",
+    host: 3306,
     dialect: "mysql",
     dialectOptions: {
       ssl: {
