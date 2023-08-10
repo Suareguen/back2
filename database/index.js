@@ -1,11 +1,11 @@
 const { Sequelize } = require('sequelize')
 const connection = new Sequelize(
-  "nakama",
-  "reboot",
-  "reboot",
+  process.env.DB_NAME,
+  process.env.DB_USER,
+  process.env.DB_PASS,
   {
-    host: 3306,
-    dialect: "mysql",
+    host: process.env.DB_HOST,
+    dialect: process.env.DB_DIALECT,
     dialectOptions: {
       ssl: {
         require: true, 

@@ -48,6 +48,7 @@ const startAPI = async () => {
     try {
 
         await fullConnection()
+        console.log('aqui voy')
         initializeExpress()
         
     } catch (error) {
