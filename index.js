@@ -27,7 +27,7 @@ const initializeExpress = () => {
             .use(morgan('dev'))
             .use(express.json())
             .use('/api',require('./api/router'))
-            .listen(3000, () => {
+            .listen(process.env.PORT, () => {
                 console.log('listening on port 3000')
             })
 

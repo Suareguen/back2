@@ -16,6 +16,8 @@ const connection = new Sequelize(
 );
 
 
+
+
 const checkConnection = async () => {
 
     try {
